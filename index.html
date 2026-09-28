@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b4ea2">
+  <meta name="description" content="EduUganda - Learn Today, Build Tomorrow">
+  <title>EduUganda</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="app"></div>
+  <div id="toast-root"></div>
+  <script src="supabase-config.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+  <script>
+    if (!window.supabase) {
+      document.getElementById("app").innerHTML = "<div class=\"auth-wrap\"><div class=\"auth-card\"><h1>EduUganda could not start</h1><p>Supabase could not be loaded. Check your internet connection or allow cdn.jsdelivr.net, then reload this page.</p></div></div>";
+    }
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
